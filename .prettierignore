@@ -1,0 +1,20 @@
+# Dependencies
+node_modules/
+
+# Native build outputs
+android/
+ios/
+
+# Bundler output
+.bundle/
+*.jsbundle
+
+# Yarn
+yarn.lock
+
+# Lockfiles & generated
+package-lock.json
+Gemfile.lock
+
+# Misc
+.gitignore

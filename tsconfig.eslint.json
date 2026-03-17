@@ -1,0 +1,17 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "allowJs": true,
+    "noEmit": true
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.js",
+    ".eslintrc.js",
+    "babel.config.js",
+    "metro.config.js",
+    "jest.config.js"
+  ],
+  "exclude": ["node_modules", "Pods"]
+}

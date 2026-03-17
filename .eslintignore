@@ -1,0 +1,18 @@
+# Build outputs
+android/
+ios/
+*.jsbundle
+
+# Dependencies
+node_modules/
+
+# Cache
+.eslintcache
+
+# Generated / Bundled
+.bundle/
+
+# Config files — these are plain JS, handled by node override in .eslintrc.js
+babel.config.js
+metro.config.js
+jest.config.js
