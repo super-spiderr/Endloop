@@ -1,10 +1,10 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
-export const Login = () => {
+export const RoastDetailsScreen = () => {
   return (
     <View style={styles.container}>
-      <Text>Login screen</Text>
+      <Text>Roast Details</Text>
     </View>
   );
 };

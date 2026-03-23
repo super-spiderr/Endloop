@@ -1,10 +1,10 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
-export const Register = () => {
+export const EditLimitScreen = () => {
   return (
     <View style={styles.container}>
-      <Text>Register</Text>
+      <Text>Welcome</Text>
     </View>
   );
 };

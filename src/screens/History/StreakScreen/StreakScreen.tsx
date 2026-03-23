@@ -1,10 +1,10 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
-export const Profile = () => {
+export const StreakScreen = () => {
   return (
     <View style={styles.container}>
-      <Text>Profile</Text>
+      <Text>Welcome to StreakScreen</Text>
     </View>
   );
 };

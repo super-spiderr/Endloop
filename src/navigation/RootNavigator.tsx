@@ -1,19 +1,19 @@
+import React from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { AppNavigator } from './AppNavigator';
-import { AuthNavigator } from './AuthNavigator';
+import { OnboardingStackNavigator } from './OnboardingStackNavigator';
+import { TabNavigator } from './TabNavigator';
+import { SplashScreen } from '../screens/Onboarding';
 import { RootStackParamList } from './types';
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
 export const RootNavigator = () => {
-  const isAuthenticated = true;
   return (
     <Stack.Navigator screenOptions={{ headerShown: false }}>
-      {isAuthenticated ? (
-        <Stack.Screen name="App" component={AppNavigator} />
-      ) : (
-        <Stack.Screen name="Auth" component={AuthNavigator} />
-      )}
+      <Stack.Screen name="Splash" component={SplashScreen} />
+      <Stack.Screen name="Onboarding" component={OnboardingStackNavigator} />
+      <Stack.Screen name="App" component={TabNavigator} />
     </Stack.Navigator>
   );
 };
+

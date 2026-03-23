@@ -1,16 +1,40 @@
+import { NavigatorScreenParams } from '@react-navigation/native';
+
 export type RootStackParamList = {
-  App: undefined;
-  Auth: undefined;
+  Splash: undefined;
+  Onboarding: NavigatorScreenParams<OnboardingStackParamList>;
+  App: NavigatorScreenParams<TabParamList>;
 };
 
-export type AuthStackParamList = {
-  Login: undefined;
-  Register: undefined;
+export type OnboardingStackParamList = {
+  Welcome: undefined;
+  Permission: undefined;
+  SetLimits: undefined;
+  RoastStyle: undefined;
+  AllDone: undefined;
 };
 
-export type AppStackParamList = {
-  Home: undefined;
-  Profile: undefined;
+export type TabParamList = {
+  HomeStack: NavigatorScreenParams<HomeStackParamList>;
+  HistoryStack: NavigatorScreenParams<HistoryStackParamList>;
+  LimitsStack: NavigatorScreenParams<LimitsStackParamList>;
+};
+
+export type HomeStackParamList = {
+  HomeScreen: undefined;
+  AppDetails: { appId: string };
+  RoastDetails: { roastId: string };
+};
+
+export type HistoryStackParamList = {
+  HistoryScreen: undefined;
+  Streak: undefined;
+};
+
+export type LimitsStackParamList = {
+  LimitsScreen: undefined;
+  AddLimit: undefined;
+  EditLimit: { limitId: string };
 };
 
 // Required by React Navigation for global type augmentation — see:
@@ -24,3 +48,4 @@ declare global {
 }
 /* eslint-enable @typescript-eslint/no-namespace */
 /* eslint-enable @typescript-eslint/no-empty-object-type */
+
