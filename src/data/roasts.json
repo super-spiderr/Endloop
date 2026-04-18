@@ -1,0 +1,88 @@
+{
+  "savage": {
+    "nudge": {
+      "morning": [
+        "Good morning. You're already on {app}. Bold choice.",
+        "{app} before coffee? You're built different.",
+        "Rise and... scroll. {app} has you in its grip already.",
+        "A fresh day, and you choose {app}. Riveting."
+      ],
+      "afternoon": [
+        "Productive afternoon? Not if {app} has anything to say about it.",
+        "The sun is out, and you're staring at {app}.",
+        "Lunch break or {app} break? We both know the answer."
+      ],
+      "night": [
+        "It's late and you're on {app}. Future you is unimpressed.",
+        "{minutes} minutes on {app} at this hour. Classic.",
+        "Sleep is for the weak, {app} is for... you.",
+        "{app} at night. Because blue light is the best lullaby."
+      ],
+      "general": [
+        "You've been on {app} for {minutes} minutes over your limit. Respect.",
+        "{app} again. At least you're consistent.",
+        "A quick check of {app} turned into {minutes} minutes. Surprise!"
+      ]
+    },
+    "roast": {
+      "general": [
+        "{minutes} minutes over on {app}. A golden retriever learned 3 tricks in that time.",
+        "You've spent {minutes} extra minutes on {app}. Your future self filed a complaint.",
+        "If wasting time was an Olympic sport, {app} would be your coach.",
+        "{minutes} minutes on {app}. Your ambition just left the chat."
+      ]
+    },
+    "savage": {
+      "general": [
+        "{total} minutes on your phone today. You could've learned a language. You chose {app}.",
+        "{app} for {minutes} minutes over limit. This is not the way.",
+        "Your dopamine receptors are screaming. {app} for {minutes} minutes?",
+        "{total} total minutes today. {app} is your new personality trait."
+      ]
+    },
+    "intervention": {
+      "general": [
+        "We need to talk about {app}. {minutes} minutes over. This is an intervention.",
+        "{minutes} minutes over on {app}. We're calling your mom.",
+        "Delete {app}. For your own good. {minutes} minutes is enough.",
+        "You're not even scrolling anymore, you're just existing in {app}."
+      ]
+    }
+  },
+  "passive_aggressive": {
+    "nudge": {
+      "general": [
+        "Oh, {app} again? How... nice.",
+        "I'm sure that {minutes} minutes on {app} was very important.",
+        "It's fine. It's not like you had anything better to do than {app}."
+      ]
+    },
+    "roast": {
+      "general": [
+        "{minutes} minutes on {app}. Your potential is probably fine. Mostly.",
+        "I love how dedicated you are to {app}. It's basically a career at this point."
+      ]
+    },
+    "savage": {
+      "general": [
+        "{total} minutes today. I'm sure your goals are still waiting for you. Somewhere.",
+        "Wow! {minutes} minutes over on {app}. You must be so proud."
+      ]
+    }
+  },
+  "supportive": {
+    "nudge": {
+      "general": [
+        "Maybe it's time for a break from {app}?",
+        "You're {minutes} minutes over. How about a quick stretch?",
+        "Let's try to close {app} and breathe for a second."
+      ]
+    },
+    "roast": {
+      "general": [
+        "You've been on {app} a bit long. You can do this!",
+        "Remember why we're limiting {app}? You've got this!"
+      ]
+    }
+  }
+}

@@ -1,4 +1,5 @@
 {
   "name": "Endloop",
-  "displayName": "Endloop"
+  "displayName": "Endloop",
+  "plugins": ["@notifee/react-native"]
 }
