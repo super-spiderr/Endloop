@@ -53,7 +53,7 @@ export const SetLimitsScreen = () => {
         const stats = await AppUsageMethods.getTodayUsageStats();
         
         const filtered = stats
-          .filter(app => (app.totalTimeInForeground ?? 0) > 60000 && app.appName)
+          .filter(app => (app.totalTimeInForeground ?? 0) > 60000 && app.appName && app.packageName !== 'com.android.settings')
           .sort((a, b) => (b.totalTimeInForeground ?? 0) - (a.totalTimeInForeground ?? 0))
           .slice(0, 3);
 

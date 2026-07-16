@@ -61,12 +61,10 @@ export const getUsageStats = async (
   } catch {
     // Fallback to the old 2-argument version if the native side hasn't been rebuilt yet
     try {
-      interface LegacyAppUsageModule {
+      const legacyModule = AppUsageModule as object as {
         getUsageStats(start: number, end: number): Promise<AppUsage[]>;
-      }
-      const fallbackResult = await (
-        AppUsageModule as unknown as LegacyAppUsageModule
-      )?.getUsageStats(startTime, endTime);
+      };
+      const fallbackResult = await legacyModule?.getUsageStats(startTime, endTime);
       return fallbackResult ?? [];
     } catch (fallbackError) {
       // eslint-disable-next-line no-console

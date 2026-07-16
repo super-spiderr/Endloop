@@ -193,7 +193,8 @@ export const AddLimitScreen = () => {
         ]);
 
         const merged = mergeUsageData(installedApps, todayStats);
-        const sorted = [...merged].sort((a, b) => b.usageMinutes - a.usageMinutes);
+        const filtered = merged.filter(app => app.packageName !== 'com.android.settings');
+        const sorted = [...filtered].sort((a, b) => b.usageMinutes - a.usageMinutes);
         setApps(sorted);
         setFilteredApps(sorted);
       } catch (error) {

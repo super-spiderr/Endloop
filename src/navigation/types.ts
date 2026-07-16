@@ -11,9 +11,11 @@ export type RootStackParamList = {
     appName: string;
     minutesOver: number;
   };
-  ShareCardModal: {
+  ShareRoastScreen: {
     roastText: string;
     appName: string;
+    minutesOver: number;
+    time: string;
   };
   PermissionReminderModal: undefined;
 };

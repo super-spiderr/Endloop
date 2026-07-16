@@ -5,23 +5,68 @@
         "Good morning. You're already on {app}. Bold choice.",
         "{app} before coffee? You're built different.",
         "Rise and... scroll. {app} has you in its grip already.",
-        "A fresh day, and you choose {app}. Riveting."
+        "A fresh day, and you choose {app}. Riveting.",
+        "Sun's up, dopamine's down. Welcome back to {app}.",
+        "The first thing you touch is your phone, and the first app is {app}. Sad.",
+        "Morning! Ready to trade your potential for {app} scrolls today?",
+        "Most people start with water. You start with {app}. Hydrate your brain, maybe?",
+        "Early bird gets the worm, but you just get {app} notifications.",
+        "It's 8 AM and you're already failing the day. Nice work.",
+        "Did you dream about {app}? Because you're back on it pretty fast.",
+        "The sun is shining, the birds are singing, and you're staring at {app} like a zombie.",
+        "Morning motivation: You've already wasted your first hour on {app}.",
+        "Your bed is for sleeping, not for {app} marathons. Get up.",
+        "Breakfast of champions: A bowl of regret and 20 minutes of {app}."
       ],
       "afternoon": [
         "Productive afternoon? Not if {app} has anything to say about it.",
         "The sun is out, and you're staring at {app}.",
-        "Lunch break or {app} break? We both know the answer."
+        "Lunch break or {app} break? We both know the answer.",
+        "Everyone else is working. You're on {app}. Living the dream?",
+        "The afternoon slump hit, and you hit {app}. Predictable.",
+        "Is {app} paying your bills? Because you're giving it all your time.",
+        "{minutes} minutes on {app} during the day. Your boss would be so proud.",
+        "Your to-do list is crying while you're on {app}.",
+        "The world is moving forward while you're stuck on {app}.",
+        "Lunch was {minutes} minutes ago. Why are you still on {app}?",
+        "Imagine if you put this energy into your actual job.",
+        "Your focus has the lifespan of a tiktok video. {app} wins again.",
+        "It's 3 PM. Do you know where your dignity is? It's in {app}.",
+        "Is this what 'working from home' looks like? {minutes} minutes of {app}?",
+        "You're not 'multitasking.' You're just ignoring your work for {app}."
       ],
       "night": [
         "It's late and you're on {app}. Future you is unimpressed.",
         "{minutes} minutes on {app} at this hour. Classic.",
         "Sleep is for the weak, {app} is for... you.",
-        "{app} at night. Because blue light is the best lullaby."
+        "{app} at night. Because blue light is the best lullaby.",
+        "Bedtime was two hours ago. {app} is your new parent now.",
+        "Staring at {app} in the dark. Your eyes hate you, and so do I.",
+        "One more scroll? You said that {minutes} minutes ago. Liar.",
+        "Your dreams are waiting, but {app} is more 'important,' right?",
+        "Midnight scrolls on {app}. Living your best life, clearly.",
+        "Your pineal gland is begging for mercy. Stop the {app} madness.",
+        "It's {minutes} minutes past 'just one more minute'.",
+        "Your phone is at 10%. Your brain is at 2%. Put {app} down.",
+        "The dark mode on {app} doesn't make this any less depressing.",
+        "You'll feel like garbage tomorrow, and you'll blame everything but {app}.",
+        "Goodnight? No, it's just 'Good {app}' until 3 AM."
       ],
       "general": [
         "You've been on {app} for {minutes} minutes over your limit. Respect.",
         "{app} again. At least you're consistent.",
-        "A quick check of {app} turned into {minutes} minutes. Surprise!"
+        "A quick check of {app} turned into {minutes} minutes. Surprise!",
+        "Limit? What limit? {app} is clearly the priority here.",
+        "{minutes} minutes over. Is this a hobby or an addiction?",
+        "If you spent this much time on yourself as you do on {app}, you'd be a CEO.",
+        "Breaking news: Local person spends {minutes} extra minutes on {app}. Nobody is surprised.",
+        "We set a limit for a reason. {app} is winning.",
+        "I'm keeping count. {minutes} minutes of your life, gone.",
+        "Is there a trophy for {minutes} minutes on {app}? No? Then close it.",
+        "You're {minutes} minutes closer to achieving absolutely nothing.",
+        "Your battery isn't the only thing draining. Look at {app}.",
+        "Is there a soul in there, or just a stream of {app} content?",
+        "Don't worry, {app} will still be there when you're 80 and wondering where your life went."
       ]
     },
     "roast": {
@@ -29,7 +74,22 @@
         "{minutes} minutes over on {app}. A golden retriever learned 3 tricks in that time.",
         "You've spent {minutes} extra minutes on {app}. Your future self filed a complaint.",
         "If wasting time was an Olympic sport, {app} would be your coach.",
-        "{minutes} minutes on {app}. Your ambition just left the chat."
+        "{minutes} minutes on {app}. Your ambition just left the chat.",
+        "The graveyard is full of people who thought they had 'just five more minutes.'",
+        "Your ancestors survived ice ages and wars so you could watch {app} for {minutes} minutes.",
+        "If {app} was a job, you'd still be broke because you're just a consumer, not a creator.",
+        "You're not 'relaxing,' you're avoiding your life in {app}.",
+        "Your screen is the only thing getting brighter today. {minutes} minutes on {app}?",
+        "Your intelligence is dropping by the minute. Current status: {minutes} minutes on {app}.",
+        "Is there a hole in your brain where {app} just lives now?",
+        "You could have read {minutes} pages of a book. Instead, you read... whatever {app} is.",
+        "People are colonizing Mars, and you're still on {app}.",
+        "I'd roast you, but {app} is already doing a great job of burning your time.",
+        "You are the target demographic for 'mediocrity.' {minutes} minutes over on {app}.",
+        "Your brain is being harvested by an algorithm. How's that {app} scroll feeling?",
+        "If you were as fast at working as you are at opening {app}, you'd be dangerous.",
+        "You're like a moth to a flame, but the flame is {app} and you're just getting fried.",
+        "I hope that {minutes} minutes on {app} was worth the existential dread later."
       ]
     },
     "savage": {
@@ -37,7 +97,22 @@
         "{total} minutes on your phone today. You could've learned a language. You chose {app}.",
         "{app} for {minutes} minutes over limit. This is not the way.",
         "Your dopamine receptors are screaming. {app} for {minutes} minutes?",
-        "{total} total minutes today. {app} is your new personality trait."
+        "{total} total minutes today. {app} is your new personality trait.",
+        "You're literally rotting. {total} minutes of your life you'll never get back.",
+        "Does your thumb hurt from scrolling {app}? Good. It should.",
+        "You're the reason the 'humanity is doomed' memes exist. {minutes} minutes on {app}.",
+        "Look at you. Just staring. {total} minutes today. Pathetic.",
+        "If I were your phone, I'd factory reset myself just to get away from {app}.",
+        "Your potential is currently at 0%. {app} has the other 100%.",
+        "Stop lying to yourself. You aren't 'just checking.' You're addicted.",
+        "{total} minutes. That's {minutes} minutes of pure, unadulterated procrastination.",
+        "You're a background character in your own life because of {app}.",
+        "If they sold 'Wasted Potential' in a bottle, it would look like your usage of {app}.",
+        "Congratulations on becoming a servant to an algorithm. {total} minutes today.",
+        "Are you waiting for a 'You Win Life' notification on {app}? Because it's not coming.",
+        "You're basically a bio-battery for {app}'s ad revenue.",
+        "{total} minutes today. I've seen more activity from a brick.",
+        "If procrastination was an art, you'd be Leonardo da {app}."
       ]
     },
     "intervention": {
@@ -45,7 +120,18 @@
         "We need to talk about {app}. {minutes} minutes over. This is an intervention.",
         "{minutes} minutes over on {app}. We're calling your mom.",
         "Delete {app}. For your own good. {minutes} minutes is enough.",
-        "You're not even scrolling anymore, you're just existing in {app}."
+        "You're not even scrolling anymore, you're just existing in {app}.",
+        "Put the phone down. Walk away. {app} is not your friend.",
+        "You've reached 'Sad Procrastinator' level. {minutes} minutes over limit.",
+        "If you don't close {app} right now, I'm telling everyone your screen time.",
+        "Is this who you want to be? The person who spent {minutes} minutes on {app} today?",
+        "I'm disabling your screen. Just kidding. But I should. {minutes} minutes over.",
+        "This is pathetic. You've spent {minutes} minutes past your own limit.",
+        "Get a life. Seriously. Close {app}.",
+        "Your life is leaking through your screen. Save what's left. Close {app}.",
+        "If you scroll one more time, I'm sending a notification to your ex. Close {app}.",
+        "This is a digital cry for help. {minutes} minutes on {app} is too much.",
+        "I'm not roasting you anymore. I'm just sad for you. {app} won."
       ]
     }
   },
@@ -54,19 +140,65 @@
       "general": [
         "Oh, {app} again? How... nice.",
         "I'm sure that {minutes} minutes on {app} was very important.",
-        "It's fine. It's not like you had anything better to do than {app}."
+        "It's fine. It's not like you had anything better to do than {app}.",
+        "Don't let your goals get in the way of your {app} time. That would be silly.",
+        "Wow, you're really committed to {app}. I wish I was that committed to anything.",
+        "It's so interesting how {app} is always your first priority.",
+        "I'm sure the world can wait while you finish your {app} session.",
+        "Oh, were you planning to do something today? No? Okay, back to {app}.",
+        "I love how you treat your screen time limit as a suggestion.",
+        "Is {app} the only thing keeping you going today?",
+        "I'm certainly impressed by your ability to ignore reality.",
+        "Another notification from {app}? You must be very popular.",
+        "It's okay, I'll just wait here until you're done with {app}. Forever.",
+        "I'm sure that {minutes} minutes of scrolling was extremely enriching for your soul."
       ]
     },
     "roast": {
       "general": [
         "{minutes} minutes on {app}. Your potential is probably fine. Mostly.",
-        "I love how dedicated you are to {app}. It's basically a career at this point."
+        "I love how dedicated you are to {app}. It's basically a career at this point.",
+        "I'm sure those {minutes} minutes on {app} will look great on your resume.",
+        "It's okay to be average. {app} for {minutes} minutes is a great start.",
+        "Did you learn anything useful on {app} today? Or was it just more 'research'?",
+        "You're doing amazing! At wasting time, I mean.",
+        "{minutes} minutes over? well, consistency is key, even if it's for something useless.",
+        "I'm sure your future self is thrilled about this {app} usage.",
+        "It's fascinating how you find time for {app} but not for your goals.",
+        "Maybe you should start an agency for how to use {app} for {minutes} extra minutes.",
+        "I won't say anything, but {app} is starting to look like your best friend.",
+        "I'm sure your family misses you, but {app} is here now.",
+        "You're really good at following the crowd on {app}. Very original.",
+        "Is {app} the only thing you're passionate about? It shows."
       ]
     },
     "savage": {
       "general": [
         "{total} minutes today. I'm sure your goals are still waiting for you. Somewhere.",
-        "Wow! {minutes} minutes over on {app}. You must be so proud."
+        "Wow! {minutes} minutes over on {app}. You must be so proud.",
+        "Is {app} the only thing that loves you back? Because you're spending a lot of time together.",
+        "Don't mind me, I'm just your screen time tracker watching you waste {minutes} minutes.",
+        "It's so brave of you to ignore your responsibilities for {app}.",
+        "I'm sure that {minutes} minutes on {app} was exactly what your career needed.",
+        "Your life is passing you by, but at least you saw that one post on {app}.",
+        "You're really pushing the boundaries of what 'productive' means.",
+        "I'd ask if you're okay, but I can see you're very busy with {app}.",
+        "It's a bold strategy to waste {total} minutes a day. Let's see if it pays off.",
+        "I'm not judging, I'm just recording every minute of your failure.",
+        "Your ambition seems to be in a deep coma. {app} is the nurse.",
+        "I love how you prioritize {app} over your literal sanity. Very avant-garde.",
+        "At the end of your life, will you remember this {app} scroll? Probably not."
+      ]
+    },
+    "intervention": {
+      "general": [
+        "I'm not saying anything, but {minutes} minutes is a lot for someone with 'plans'.",
+        "It's your life. If you want to spend it on {app}, that's your choice. I guess.",
+        "I suppose some people just don't have anything better to do than {app}.",
+        "I'm sure those {minutes} minutes of {app} were much more important than sleep.",
+        "Maybe we should rename the app to '{app} Marathon'. {minutes} minutes!",
+        "I'm starting to think you have a crush on {app}. It's getting awkward.",
+        "If you want to stay in {app} forever, just let me know and I'll lock the door."
       ]
     }
   },
@@ -75,13 +207,124 @@
       "general": [
         "Maybe it's time for a break from {app}?",
         "You're {minutes} minutes over. How about a quick stretch?",
-        "Let's try to close {app} and breathe for a second."
+        "Let's try to close {app} and breathe for a second.",
+        "Hey, you've been on {app} for {minutes} minutes. Maybe take a walk?",
+        "Your eyes might need a break. {app} will still be here later.",
+        "How about we try to do something off-screen for a bit?",
+        "You've been doing great today, don't let {app} distract you now.",
+        "Just a friendly reminder that you have {minutes} minutes over your limit.",
+        "Refresh your mind! {app} can wait.",
+        "You've got this, just one more minute on {app} and then we stop?",
+        "Let's refocus on what matters.",
+        "A little break from {app} will do wonders for your focus.",
+        "You're {minutes} minutes in. How about a glass of water instead?",
+        "Your phone is a tool, not a home. Come back to the real world."
       ]
     },
     "roast": {
       "general": [
         "You've been on {app} a bit long. You can do this!",
-        "Remember why we're limiting {app}? You've got this!"
+        "Remember why we're limiting {app}? You've got this!",
+        "It's tough to stay off {app}, but you're stronger than an algorithm.",
+        "Think of how good you'll feel once you finish your to-do list instead of {app}.",
+        "Small steps! Close {app} now and it's a win.",
+        "You're capable of so much more than just scrolling {app}.",
+        "Let's get back on track. {minutes} minutes on {app} is plenty.",
+        "Your future self will thank you for closing {app} right now.",
+        "You've spent {minutes} minutes here. That's enough for now, don't you think?",
+        "Don't be discouraged! Just put the phone down for 10 minutes.",
+        "One small victory: close {app} right now.",
+        "You have the power to stop. {app} doesn't control you.",
+        "Let's turn this {minutes} minutes of {app} into {minutes} minutes of progress.",
+        "Take a deep breath and put the phone down. You've got this."
+      ]
+    },
+    "savage": {
+      "general": [
+        "Even the best of us get distracted. {minutes} minutes is a lot, though.",
+        "You're better than this scroll. {app} is just a distraction.",
+        "I know it's hard to stop, but you'll feel better when you do.",
+        "Imagine what you could achieve if you shifted this energy from {app}.",
+        "It's {minutes} minutes over, but it's never too late to stop.",
+        "You've got big dreams, and {app} isn't part of them. Let's go.",
+        "Let's be kind to ourselves and close {app} for a bit."
+      ]
+    },
+    "intervention": {
+      "general": [
+        "It's time for a real break. {minutes} minutes over is enough.",
+        "Let's prioritize your well-being over {app}. Close it now.",
+        "You deserve a break from the noise. Step away from {app}.",
+        "This is a gentle nudge to regain your focus. {minutes} minutes is plenty.",
+        "Let's make a better choice for the next hour. No more {app}."
+      ]
+    }
+  },
+  "stoic": {
+    "nudge": {
+      "general": [
+        "You are exceeding your limit. Reconsider your choices.",
+        "Focus is a choice. You have chosen {app}.",
+        "Time is the one resource you cannot replenish. {minutes} minutes gone.",
+        "What is within your control? Your thumb. What is not? The time you've lost.",
+        "{minutes} minutes on {app}. Is this purposeful action?",
+        "Observe your urge to scroll. Is it necessary?",
+        "You are a slave to the pixels on the screen. Break the cycle.",
+        "The day is short. {app} is long. Choose wisely.",
+        "Is this consumption or creation? {app} is consumption.",
+        "A wise man once said nothing while scrolling {app}. Because he wasn't scrolling.",
+        "Your attention is your most valuable asset. Why give it to {app}?"
+      ],
+      "morning": [
+        "The sun rises for your action, not your scrolling. {app} is a distraction.",
+        "First thing? {app}? A warrior starts with discipline.",
+        "The morning is for clarity. {app} is for noise."
+      ],
+      "afternoon": [
+        "The day is half spent. {app} has taken {minutes} minutes already.",
+        "Action is the antidote to the afternoon slump. {app} is the poison."
+      ],
+      "night": [
+        "Sleep is the brother of death. {app} is the thief of rest.",
+        "Rest in peace, not in {app}. Close the screen."
+      ]
+    },
+    "roast": {
+      "general": [
+        "External things cannot hurt you, but wasting time will. {minutes} minutes over.",
+        "Desire for {app} is a burden. Relinquish it.",
+        "Waste no more time arguing what a good user should be. Be one.",
+        "Your focus is scattered like dust in the wind. {minutes} minutes on {app}.",
+        "Is this scroll essential? No. Then why continue?",
+        "Wealth is the ability to fully experience life. You are spending it on {app}.",
+        "The impediment to action advances action. Close {app}.",
+        "You seek comfort in {app}. True comfort is found in discipline.",
+        "The soul is dyed the color of its thoughts. Yours are colored by {app}.",
+        "You are more than your screen time. Prove it."
+      ]
+    },
+    "savage": {
+      "general": [
+        "Death is certain. {app} is optional. You chose {app} for {total} minutes.",
+        "You are wasting the only thing that matters: time.",
+        "The mind is its own place. Yours is currently in {app}.",
+        "A man who wastes an hour of time has not discovered the value of life.",
+        "Control your impulses, or they will control you. {minutes} minutes over.",
+        "You are not a tree. You can move. Leave {app}.",
+        "What will you tell your future self about these {total} minutes?",
+        "If you cannot control your own thumb, what can you control?",
+        "True power is the ability to say no to {app}."
+      ]
+    },
+    "intervention": {
+      "general": [
+        "Cease. {minutes} minutes over limit.",
+        "Return to reality. {app} is a shadow.",
+        "Your life is happening elsewhere. Close the screen.",
+        "Discipline is freedom. You are currently in a cage of {app}.",
+        "Enough. The time has come to stop.",
+        "The hour is late. The waste is great. Close {app}.",
+        "You have lost your way in the digital woods. Come back."
       ]
     }
   }

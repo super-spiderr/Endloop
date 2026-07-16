@@ -43,19 +43,11 @@ export const HistoryScreen = () => {
     <FadeInView key={item.id} translateY={10} style={styles.roastItem}>
       <TouchableOpacity 
         onPress={() => {
-          // Navigating to HomeStack's RoastDetails from HistoryStack
-          navigation.navigate('App', {
-            screen: 'HomeStack',
-            params: {
-              screen: 'RoastDetails',
-              params: {
-                roastId: item.id,
-                roastText: item.text,
-                appName: item.appName,
-                minutesOver: item.minutesOver,
-                time: item.dateString
-              }
-            }
+          navigation.navigate('ShareRoastScreen', {
+            roastText: item.text,
+            appName: item.appName,
+            minutesOver: item.minutesOver,
+            time: item.dateString,
           });
         }}
       >

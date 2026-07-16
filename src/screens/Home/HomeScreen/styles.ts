@@ -1,16 +1,17 @@
-import { StyleSheet } from 'react-native';
 import { ThemeType } from '../../../theme';
+import { widthScale, heightScale } from '../../../utils/responsive';
+import { StyleSheet } from 'react-native';
 
 export const createStyles = (theme: ThemeType) =>
   StyleSheet.create({
     appCard: {
       backgroundColor: theme.colors.withOpacity(theme.colors.white, 0.05),
-      borderRadius: 16,
-      padding: 12,
+      borderRadius: widthScale(16),
+      padding: widthScale(12),
       width: '100%',
     },
     appCardContainer: {
-      marginBottom: 8,
+      marginBottom: heightScale(8),
       width: '100%',
     },
     appCardHeader: {
@@ -18,48 +19,48 @@ export const createStyles = (theme: ThemeType) =>
       flexDirection: 'row',
     },
     appCardIcon: {
-      borderRadius: 8,
-      height: 24,
-      width: 24,
+      borderRadius: widthScale(8),
+      height: widthScale(24),
+      width: widthScale(24),
     },
     appCardIconText: {
       color: theme.colors.white,
-      fontSize: 10,
+      fontSize: widthScale(10),
       fontWeight: 'bold',
     },
     appCardInfo: {
       flex: 1,
-      marginLeft: 10,
+      marginLeft: widthScale(10),
     },
     appCardLimit: {
       color: theme.colors.textSecondary,
-      fontSize: 9,
-      marginTop: 2,
+      fontSize: widthScale(9),
+      marginTop: heightScale(2),
       textAlign: 'right',
     },
     appCardName: {
       color: theme.colors.textPrimary,
-      fontSize: 13,
+      fontSize: widthScale(13),
       fontWeight: '600',
     },
     appCardProgressBar: {
       backgroundColor: theme.colors.withOpacity(theme.colors.white, 0.05),
-      borderRadius: 2,
-      height: 3,
+      borderRadius: widthScale(2),
+      height: heightScale(3),
       overflow: 'hidden',
-      width: 60,
+      width: widthScale(60),
     },
     appCardProgressContainer: {
       alignItems: 'flex-end',
       marginLeft: 'auto',
     },
     appCardProgressFill: {
-      borderRadius: 2,
+      borderRadius: widthScale(2),
       height: '100%',
     },
     appCardUsage: {
       color: theme.colors.textSecondary,
-      fontSize: 11,
+      fontSize: widthScale(11),
     },
     appCardsVertical: {
       width: '100%',
@@ -67,10 +68,10 @@ export const createStyles = (theme: ThemeType) =>
     appIconPlaceholder: {
       alignItems: 'center',
       backgroundColor: theme.colors.primary,
-      borderRadius: 8,
-      height: 24,
+      borderRadius: widthScale(8),
+      height: widthScale(24),
       justifyContent: 'center',
-      width: 24,
+      width: widthScale(24),
     },
     container: {
       backgroundColor: theme.colors.background,
@@ -79,56 +80,57 @@ export const createStyles = (theme: ThemeType) =>
     contentBody: {
       flex: 1,
       justifyContent: 'space-between',
-      paddingBottom: 20,
+      paddingBottom: heightScale(20),
     },
     emptyRoastHeader: {
       alignItems: 'center',
       flexDirection: 'row',
-      minHeight: 60,
-      paddingLeft: 85, // Space for the mascot
+      minHeight: heightScale(60),
+      paddingLeft: widthScale(85), // Space for the mascot
     },
     emptyRoastLabel: {
       color: theme.colors.primary,
       fontFamily: theme.typography.mono.medium,
-      fontSize: 10,
+      fontSize: widthScale(10),
       letterSpacing: 1.5,
       textTransform: 'uppercase',
     },
     emptyRoastMascot: {
-      height: 120,
-      left: -25,
+      height: heightScale(120),
+      left: widthScale(-25),
       marginRight: 0,
       position: 'absolute',
       resizeMode: 'contain',
       top: 0,
-      width: 120,
+      width: widthScale(120),
     },
     emptyRoastPlaceholder: {
       backgroundColor: theme.colors.withOpacity(theme.colors.white, 0.03),
       borderColor: theme.colors.withOpacity(theme.colors.white, 0.08),
-      borderRadius: 28,
-      marginHorizontal: 16,
-      minHeight: 140,
-      padding: 2,
+      borderRadius: widthScale(28),
+      marginHorizontal: widthScale(16),
+      minHeight: heightScale(140),
+      padding: widthScale(2),
     },
     emptyRoastText: {
       color: theme.colors.white,
       fontFamily: theme.typography.body.italic,
-      fontSize: 14,
-      lineHeight: 20,
+      fontSize: widthScale(14),
+      lineHeight: heightScale(20),
     },
+    fadeInView: { alignItems: 'center', flexDirection: 'row', gap: 10 },
     greetingText: {
       color: theme.colors.textPrimary,
       fontFamily: theme.typography.display.bold,
-      fontSize: 20,
+      fontSize: widthScale(20),
     },
     header: {
       alignItems: 'center',
       flexDirection: 'row',
       justifyContent: 'space-between',
-      paddingBottom: 10,
-      paddingHorizontal: 20,
-      paddingTop: 40,
+      paddingBottom: heightScale(10),
+      paddingHorizontal: widthScale(20),
+      paddingTop: heightScale(40),
       width: '100%',
     },
     headerLabels: {
@@ -136,8 +138,8 @@ export const createStyles = (theme: ThemeType) =>
     },
     heroContainer: {
       alignItems: 'center',
-      marginVertical: 10,
-      paddingHorizontal: 24,
+      marginVertical: heightScale(10),
+      paddingHorizontal: widthScale(24),
     },
     heroHeader: {
       alignItems: 'center',
@@ -145,16 +147,16 @@ export const createStyles = (theme: ThemeType) =>
     heroLabel: {
       color: theme.colors.primary,
       fontFamily: theme.typography.mono.medium,
-      fontSize: 10,
+      fontSize: widthScale(10),
       letterSpacing: 1.2,
-      marginTop: 2,
+      marginTop: heightScale(2),
       opacity: 0.9,
       textAlign: 'center',
     },
     heroTimeLarge: {
       color: theme.colors.white,
       fontFamily: theme.typography.hero.regular,
-      fontSize: 84, // Squada One is condensed, so it can be even larger
+      fontSize: widthScale(84), // Squada One is condensed, so it can be even larger
       letterSpacing: -1,
       margin: 0,
       padding: 0,
@@ -166,13 +168,13 @@ export const createStyles = (theme: ThemeType) =>
     roastPreviewCard: {
       backgroundColor: theme.colors.withOpacity(theme.colors.error, 0.08),
       borderColor: theme.colors.withOpacity(theme.colors.error, 0.15),
-      borderRadius: 20,
+      borderRadius: widthScale(20),
       borderWidth: 1,
-      padding: 16,
+      padding: widthScale(16),
     },
     roastPreviewContainer: {
-      marginVertical: 10,
-      paddingHorizontal: 16,
+      marginVertical: heightScale(10),
+      paddingHorizontal: widthScale(16),
     },
     roastPreviewHeader: {
       alignItems: 'center',
@@ -184,39 +186,39 @@ export const createStyles = (theme: ThemeType) =>
     roastPreviewLabel: {
       color: theme.colors.error,
       fontFamily: theme.typography.mono.medium,
-      fontSize: 9,
+      fontSize: widthScale(9),
       letterSpacing: 1,
       textTransform: 'uppercase',
     },
     roastPreviewMascot: {
-      height: 60,
-      marginRight: 12,
+      height: heightScale(60),
+      marginRight: widthScale(12),
       resizeMode: 'contain',
-      width: 60,
+      width: widthScale(60),
     },
     roastPreviewMeta: {
       alignItems: 'center',
       flexDirection: 'row',
       justifyContent: 'space-between',
-      marginBottom: 2,
+      marginBottom: heightScale(2),
     },
     roastPreviewTime: {
       color: theme.colors.textSecondary,
       fontFamily: theme.typography.mono.regular,
-      fontSize: 9,
+      fontSize: widthScale(9),
     },
     roastPreviewTitle: {
       color: theme.colors.white,
       fontFamily: theme.typography.body.italic,
-      fontSize: 14,
-      lineHeight: 18,
+      fontSize: widthScale(14),
+      lineHeight: heightScale(18),
     },
     sectionTitle: {
       color: theme.colors.textSecondary,
       fontFamily: theme.typography.mono.medium,
-      fontSize: 10,
+      fontSize: widthScale(10),
       letterSpacing: 1.5,
-      marginBottom: 10,
+      marginBottom: heightScale(10),
       textTransform: 'uppercase',
     },
 
@@ -224,30 +226,30 @@ export const createStyles = (theme: ThemeType) =>
       alignItems: 'center',
       backgroundColor: theme.colors.withOpacity(theme.colors.white, 0.04),
       borderColor: theme.colors.withOpacity(theme.colors.white, 0.08),
-      borderRadius: 20,
+      borderRadius: widthScale(20),
       borderWidth: 1,
       flexDirection: 'row',
-      paddingHorizontal: 12,
-      paddingVertical: 6,
+      paddingHorizontal: widthScale(12),
+      paddingVertical: heightScale(6),
     },
     streakCount: {
       color: theme.colors.primary,
       fontFamily: theme.typography.mono.medium,
-      fontSize: 16,
-      marginLeft: 6,
+      fontSize: widthScale(16),
+      marginLeft: widthScale(6),
     },
     tipContainer: {
       marginTop: 0,
-      paddingLeft: 85, // Align text with the label above
+      paddingLeft: widthScale(85), // Align text with the label above
     },
     tipTitle: {
       color: theme.colors.textSecondary,
       fontFamily: theme.typography.mono.medium,
-      fontSize: 10,
+      fontSize: widthScale(10),
       letterSpacing: 2,
-      marginBottom: 8,
+      marginBottom: heightScale(8),
     },
     usageContainer: {
-      paddingHorizontal: 16,
+      paddingHorizontal: widthScale(16),
     },
   });

@@ -11,3 +11,13 @@ export const AGENT_ONE_LINERS = [
   "I'm not mad, I'm just gathering evidence.",
   "Agent's log: Subject is still staring at the glass rectangle.",
 ];
+
+export const AGENT_TIPS = [
+  'Put your phone in another room while working. Out of sight, out of mind.',
+  'Charge your phone outside the bedroom to reclaim your mornings.',
+  "Turn off non-human notifications. If it's not a person, it's not important.",
+  'Use Grayscale mode to make your phone less addictive.',
+  "Delete apps that don't add value. You can always use the web version.",
+  'Set a "Digital Sunset" 1 hour before bed.',
+  'Practice 5 minutes of mindful breathing before unlocking your phone.',
+];

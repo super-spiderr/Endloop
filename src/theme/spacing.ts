@@ -1,8 +1,10 @@
+import { moderateScale } from '../utils/responsive';
+
 export const spacing = {
-  xs: 4,
-  s: 8,
-  m: 16,
-  l: 24,
-  xl: 32,
-  xxl: 40,
+  xs: moderateScale(4),
+  s: moderateScale(8),
+  m: moderateScale(16),
+  l: moderateScale(24),
+  xl: moderateScale(32),
+  xxl: moderateScale(40),
 };

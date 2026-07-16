@@ -29,7 +29,7 @@ export const AnimatedCounter: React.FC<AnimatedCounterProps> = ({
     const roundedValue = Math.floor(sharedValue.value);
     return {
       text: `${prefix}${roundedValue}${suffix}`,
-    } as unknown as Partial<TextInputProps>;
+    } as Record<string, string | number>;
   });
 
   return (

@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react';
 import { useTheme } from '../../../theme';
 import { createStyles } from './styles';
-import { Text, View, Image, TouchableOpacity, Share } from 'react-native';
+import { Text, View, Image, TouchableOpacity } from 'react-native';
 import { Screen } from '../../../components';
 import { FadeInView } from '../../../components/animations';
 import { AppButton } from '../../../components/ui/AppButton';
@@ -21,15 +21,13 @@ export const RoastDetailsScreen = () => {
 
   const { roastText, appName, minutesOver, time } = route.params;
 
-  const handleShare = async () => {
-    try {
-      await Share.share({
-        message: `Agent Loop just roasted me: "${roastText}" on ${appName}. I'm ${minutesOver}m over my limit.`,
-      });
-    } catch (error) {
-      // eslint-disable-next-line no-console
-      console.error('Error sharing:', error);
-    }
+  const handleShare = () => {
+    navigation.navigate('ShareRoastScreen', {
+      roastText,
+      appName,
+      minutesOver,
+      time,
+    });
   };
 
   return (

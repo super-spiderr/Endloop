@@ -68,6 +68,15 @@ module.exports = {
     'react-native/no-raw-text': 'error',
     // Unused styles in StyleSheet.create
     'react-native/no-unused-styles': 'warn',
+    // Enforce alphabetical sorting of style keys and properties
+    'react-native/sort-styles': [
+      'error',
+      'asc',
+      {
+        ignoreClassNames: false,
+        ignoreStyleProperties: false,
+      },
+    ],
 
     // TypeScript — stricter than recommended defaults
     '@typescript-eslint/no-unused-vars': [

@@ -1,5 +1,6 @@
 import { StyleSheet, ViewStyle, TextStyle, ImageStyle } from 'react-native';
 import { ThemeType } from '../../../theme';
+import { widthScale } from '@/utils/responsive';
 
 export const createStyles = (theme: ThemeType) =>
   StyleSheet.create({
@@ -14,12 +15,6 @@ export const createStyles = (theme: ThemeType) =>
       fontSize: 24,
       letterSpacing: 1,
     } as TextStyle,
-    backdrop: {
-      backgroundColor: theme.colors.overlay,
-      flex: 1,
-      justifyContent: 'center',
-      padding: 24,
-    } as ViewStyle,
     body: {
       alignItems: 'center',
       flex: 1,
@@ -32,6 +27,12 @@ export const createStyles = (theme: ThemeType) =>
       height: 600,
       overflow: 'hidden',
       width: '100%',
+    } as ViewStyle,
+    container: {
+      backgroundColor: theme.colors.background,
+      flex: 1,
+      justifyContent: 'center',
+      padding: widthScale(20),
     } as ViewStyle,
     detailsContainer: {
       alignItems: 'center',

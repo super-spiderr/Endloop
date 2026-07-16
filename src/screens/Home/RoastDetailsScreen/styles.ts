@@ -1,22 +1,21 @@
-import { StyleSheet, Dimensions } from 'react-native';
+import { StyleSheet } from 'react-native';
 import { ThemeType } from '../../../theme';
-
-const { height } = Dimensions.get('window');
+import { widthScale, heightScale, SCREEN_HEIGHT } from '../../../utils/responsive';
 
 export const createStyles = (theme: ThemeType) =>
   StyleSheet.create({
     closeButton: {
-      left: 20,
-      padding: 10,
+      left: widthScale(20),
+      padding: widthScale(10),
       position: 'absolute',
-      top: 20,
+      top: heightScale(20),
       zIndex: 10,
     },
     container: {
       backgroundColor: theme.colors.background,
       flex: 1,
-      paddingHorizontal: 24,
-      paddingTop: 60,
+      paddingHorizontal: widthScale(24),
+      paddingTop: heightScale(60),
     },
     content: {
       alignItems: 'center',
@@ -24,40 +23,40 @@ export const createStyles = (theme: ThemeType) =>
       justifyContent: 'center',
     },
     dismissButton: {
-      marginTop: 24,
-      paddingVertical: 12,
+      marginTop: heightScale(24),
+      paddingVertical: heightScale(12),
     },
     dismissText: {
       color: theme.colors.withOpacity(theme.colors.white, 0.4),
-      fontSize: 14,
+      fontSize: widthScale(14),
       fontWeight: '600',
       textAlign: 'center',
       textTransform: 'uppercase',
     },
     footer: {
-      marginBottom: 40,
+      marginBottom: heightScale(40),
       width: '100%',
     },
     headerLabel: {
       color: theme.colors.textSecondary,
       fontFamily: theme.typography.mono.medium,
-      fontSize: 10,
+      fontSize: widthScale(10),
       letterSpacing: 3,
     },
     mascot: {
-      height: 100,
-      marginBottom: 20,
+      height: heightScale(100),
+      marginBottom: heightScale(20),
       resizeMode: 'contain',
-      width: 100,
+      width: widthScale(100),
     },
     metaContainer: {
       alignSelf: 'stretch',
-      marginTop: 40,
+      marginTop: heightScale(40),
     },
     metaLabel: {
       color: theme.colors.textSecondary,
       fontFamily: theme.typography.mono.medium,
-      fontSize: 10,
+      fontSize: widthScale(10),
       letterSpacing: 2,
     },
     metaRow: {
@@ -66,22 +65,22 @@ export const createStyles = (theme: ThemeType) =>
       borderColor: theme.colors.withOpacity(theme.colors.white, 0.1),
       flexDirection: 'row',
       justifyContent: 'space-between',
-      paddingVertical: 16,
+      paddingVertical: heightScale(16),
     },
     metaValue: {
       color: theme.colors.white,
       fontFamily: theme.typography.mono.medium,
-      fontSize: 14,
+      fontSize: widthScale(14),
     },
     roastHeader: {
       alignItems: 'center',
-      marginBottom: 60,
+      marginBottom: heightScale(60),
     },
     roastText: {
       color: theme.colors.white,
       fontFamily: theme.typography.body.italic,
-      fontSize: height < 700 ? 32 : 40,
-      lineHeight: height < 700 ? 38 : 48,
+      fontSize: SCREEN_HEIGHT < 700 ? widthScale(32) : widthScale(40),
+      lineHeight: SCREEN_HEIGHT < 700 ? heightScale(38) : heightScale(48),
       textAlign: 'center',
     },
   });

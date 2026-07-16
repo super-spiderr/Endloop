@@ -1,12 +1,14 @@
+import { fontScale } from '../utils/responsive';
+
 export const typography = {
   // Primary brand font
   family: 'DMSans',
-  
+
   // Hero impact font (Big numbers, centerpiece)
   hero: {
     regular: 'SquadaOne-Regular',
   },
-  
+
   // Display styles (Headlines, titles)
   display: {
     bold: 'DMSans-Bold',
@@ -25,15 +27,15 @@ export const typography = {
   },
   // Legacy styles
   h1: {
-    fontSize: 32,
+    fontSize: fontScale(32),
     fontWeight: 'bold' as const,
   },
   h2: {
-    fontSize: 24,
+    fontSize: fontScale(24),
     fontWeight: 'bold' as const,
   },
   caption: {
     fontFamily: 'DMSans-Regular',
-    fontSize: 12,
+    fontSize: fontScale(12),
   },
 } as const;

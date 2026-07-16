@@ -1,31 +1,32 @@
-import { StyleSheet } from 'react-native';
 import { ThemeType } from '../../../theme';
+import { widthScale, heightScale } from '../../../utils/responsive';
+import { StyleSheet } from 'react-native';
 
 export const createStyles = (theme: ThemeType) =>
   StyleSheet.create({
     bottomSection: {
       alignItems: 'center',
-      marginVertical: 100,
+      marginVertical: heightScale(100),
       width: '100%',
     },
     bottomSpacer: {
-      height: 200,
+      height: heightScale(200),
     },
     confirmedText: {
       color: theme.colors.primary,
-      fontSize: 14,
+      fontSize: widthScale(14),
       fontWeight: '600',
-      marginBottom: 24,
+      marginBottom: heightScale(24),
       textTransform: 'uppercase',
     },
     container: {
       alignItems: 'center',
       backgroundColor: theme.colors.background,
-      paddingHorizontal: 20,
+      paddingHorizontal: widthScale(20),
     },
     header: {
       backgroundColor: theme.colors.background,
-      paddingTop: 40,
+      paddingTop: heightScale(40),
       width: '100%',
       zIndex: 50,
     },
@@ -35,22 +36,22 @@ export const createStyles = (theme: ThemeType) =>
       width: '100%',
     },
     narrativeGap: {
-      height: 350,
+      height: heightScale(350),
     },
     narrativeSpacer: {
-      height: 1600,
+      height: heightScale(1600),
     },
     narrativeText: {
       color: theme.colors.textPrimary,
-      fontSize: 24,
+      fontSize: widthScale(24),
       fontWeight: '600',
       textAlign: 'center',
     },
     narrativeTextSub: {
       color: theme.colors.textSecondary,
-      fontSize: 16,
+      fontSize: widthScale(16),
       fontStyle: 'italic',
-      marginTop: 8,
+      marginTop: heightScale(8),
       textAlign: 'center',
     },
     percentIndicator: {
@@ -58,13 +59,13 @@ export const createStyles = (theme: ThemeType) =>
       backgroundColor: theme.colors.transparent,
       justifyContent: 'center',
       position: 'absolute',
-      right: 20,
-      top: 10,
+      right: widthScale(20),
+      top: heightScale(10),
       zIndex: 100,
     },
     percentText: {
       color: theme.colors.primary,
-      fontSize: 14,
+      fontSize: widthScale(14),
       fontWeight: 'bold',
       textShadowColor: theme.colors.withOpacity(theme.colors.black, 0.75),
       textShadowOffset: { height: 1, width: 0 },
@@ -72,7 +73,7 @@ export const createStyles = (theme: ThemeType) =>
     },
     progressBarBackground: {
       backgroundColor: theme.colors.withOpacity(theme.colors.white, 0.1),
-      height: 4,
+      height: heightScale(4),
       left: 0,
       position: 'absolute',
       right: 0,
@@ -87,13 +88,13 @@ export const createStyles = (theme: ThemeType) =>
       flexGrow: 1,
     },
     scrollSpacer: {
-      height: 2500,
+      height: heightScale(2500),
     },
     scrollTease: {
       color: theme.colors.textSecondary,
-      fontSize: 16,
+      fontSize: widthScale(16),
       fontStyle: 'italic',
-      marginVertical: 40,
+      marginVertical: heightScale(40),
       opacity: 0.5,
     },
     stackedItem: {
@@ -108,21 +109,21 @@ export const createStyles = (theme: ThemeType) =>
     },
     stickyWrapper: {
       backgroundColor: theme.colors.background,
-      paddingVertical: 20,
+      paddingVertical: heightScale(20),
       width: '100%',
     },
     subtitle: {
       color: theme.colors.textSecondary,
-      fontSize: 18,
-      lineHeight: 26,
-      marginBottom: 48,
+      fontSize: widthScale(18),
+      lineHeight: heightScale(26),
+      marginBottom: heightScale(48),
       textAlign: 'center',
     },
     title: {
       color: theme.colors.textPrimary,
-      fontSize: 32,
+      fontSize: widthScale(32),
       fontWeight: 'bold',
-      marginBottom: 12,
+      marginBottom: heightScale(12),
       textAlign: 'center',
     },
     wrapper: {

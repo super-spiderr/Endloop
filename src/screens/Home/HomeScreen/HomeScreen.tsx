@@ -1,6 +1,6 @@
 import { useNavigation, useFocusEffect } from '@react-navigation/native';
 import React, { useCallback, useMemo, useState, useEffect } from 'react';
-import { Text, View, Image, TouchableOpacity, TextInput, TextInputProps } from 'react-native';
+import { Text, View, Image, TouchableOpacity, TextInput } from 'react-native';
 import Animated, { useSharedValue, withTiming, useAnimatedProps } from 'react-native-reanimated';
 import { HomeNavigationProp } from '../../../navigation/types';
 import { Screen } from '../../../components';
@@ -16,7 +16,7 @@ import { getStreakStats, StreakStats } from '../../../utils/streaks';
 
 import { getMascotForRatio } from '../../../utils/mascot';
 import MainLogo from '../../../assets/svgs/MainLogo';
-import { DAILY_GOAL_MS, AGENT_ONE_LINERS } from '../../../constants';
+import { DAILY_GOAL_MS, AGENT_ONE_LINERS, AGENT_TIPS } from '../../../constants';
 
 const AnimatedFadeInView = Animated.createAnimatedComponent(FadeInView);
 
@@ -33,20 +33,7 @@ export const HomeScreen = () => {
   const animatedTimeMs = useSharedValue(0);
   const animTimeRef = React.useRef(animatedTimeMs);
 
-  const tips = useMemo(
-    () => [
-      'Put your phone in another room while working. Out of sight, out of mind.',
-      'Charge your phone outside the bedroom to reclaim your mornings.',
-      "Turn off non-human notifications. If it's not a person, it's not important.",
-      'Use Grayscale mode to make your phone less addictive.',
-      "Delete apps that don't add value. You can always use the web version.",
-      'Set a "Digital Sunset" 1 hour before bed.',
-      'Practice 5 minutes of mindful breathing before unlocking your phone.',
-    ],
-    [],
-  );
-
-  const [dailyTip] = useState(() => tips[Math.floor(Math.random() * tips.length)]);
+  const [dailyTip] = useState(() => AGENT_TIPS[Math.floor(Math.random() * AGENT_TIPS.length)]);
   const [activeOneLiner, setActiveOneLiner] = useState<string | null>(null);
 
   const handleMascotTap = () => {
@@ -76,8 +63,8 @@ export const HomeScreen = () => {
     } else {
       baseGreeting = 'Good night';
     }
-    return `${baseGreeting}, ${name}`;
-  }, [name]);
+    return `${baseGreeting},`;
+  }, []);
 
   useFocusEffect(
     useCallback(() => {
@@ -89,7 +76,7 @@ export const HomeScreen = () => {
           ]);
 
           const sortedStats = stats
-            .filter(s => s.totalTimeInForeground > 0)
+            .filter(s => s.totalTimeInForeground > 0 && s.packageName !== 'com.android.settings')
             .sort((a, b) => b.totalTimeInForeground - a.totalTimeInForeground);
 
           setUsage(sortedStats);
@@ -98,16 +85,21 @@ export const HomeScreen = () => {
           setStreak(getStreakStats());
           setIsDataLoaded(true);
 
-          // Start count-up animation
+          // Update animated value smoothly without resetting to zero
           const totalMs = sortedStats.reduce((acc, curr) => acc + curr.totalTimeInForeground, 0);
-          animTimeRef.current.value = 0;
-          animTimeRef.current.value = withTiming(totalMs, { duration: 1200 });
+          animTimeRef.current.value = withTiming(totalMs, { duration: 1000 });
         } catch (error) {
           // eslint-disable-next-line no-console
           console.error('Failed to fetch data:', error);
         }
       };
+
       void fetchData();
+      const interval = setInterval(() => {
+        void fetchData();
+      }, 20000); // Refresh every 20 seconds
+
+      return () => clearInterval(interval);
     }, []),
   );
 
@@ -150,12 +142,12 @@ export const HomeScreen = () => {
   }, [totalScreenTime]);
 
   const animatedProps = useAnimatedProps(() => {
-    const ms = animatedTimeMs.value;
-    const hours = Math.floor(ms / (1000 * 60 * 60));
-    const minutes = Math.floor((ms / (1000 * 60)) % 60);
+    const msValue = animatedTimeMs.value;
+    const hrs = Math.floor(msValue / (1000 * 60 * 60));
+    const mins = Math.floor((msValue / (1000 * 60)) % 60);
     return {
-      text: `${hours}h ${minutes}m`,
-    } as unknown as TextInputProps;
+      text: `${hrs}h ${mins}m`,
+    } as Record<string, string | number>;
   });
 
   const renderHeroSection = () => {
@@ -259,15 +251,11 @@ export const HomeScreen = () => {
         <TouchableOpacity
           style={styles.roastPreviewCard}
           onPress={() =>
-            navigation.navigate('HomeStack', {
-              screen: 'RoastDetails',
-              params: {
-                roastId: latestRoast.id,
-                roastText: latestRoast.text,
-                appName: latestRoast.appName,
-                minutesOver: latestRoast.minutesOver,
-                time: latestRoast.dateString,
-              },
+            navigation.navigate('ShareRoastScreen', {
+              roastText: latestRoast.text,
+              appName: latestRoast.appName,
+              minutesOver: latestRoast.minutesOver,
+              time: latestRoast.dateString,
             })
           }
         >
@@ -292,13 +280,11 @@ export const HomeScreen = () => {
       <View style={styles.container}>
         <View style={styles.header}>
           <View style={styles.headerLabels}>
-            <FadeInView
-              translateX={-20}
-              style={{ flexDirection: 'row', alignItems: 'center', gap: 10 }}
-            >
+            <FadeInView translateX={-20} style={styles.fadeInView}>
               <MainLogo color={colors.primary} size={24} />
               <Text style={styles.greetingText}>{greeting}</Text>
             </FadeInView>
+            <Text style={styles.greetingText}>{name}</Text>
           </View>
 
           <FadeInView translateX={20} delay={600}>

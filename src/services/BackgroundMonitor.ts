@@ -30,9 +30,9 @@ class BackgroundMonitor {
 
     try {
       await notifee.requestPermission();
-    } catch (e) {
+    } catch (error) {
       // eslint-disable-next-line no-console
-      console.log('Permission request error:', e);
+      console.log('Permission request error:', error);
     }
 
     const options = {
@@ -53,9 +53,9 @@ class BackgroundMonitor {
 
     try {
       await BackgroundService.start(this.task.bind(this), options);
-    } catch (e) {
+    } catch (error) {
       // eslint-disable-next-line no-console
-      console.log('Error starting background service:', e);
+      console.log('Error starting background service:', error);
       this.isRunning = false;
     }
   }
@@ -96,7 +96,7 @@ class BackgroundMonitor {
 
       for (const limit of limits) {
         const stat = todayStats.find(s => s.packageName === limit.packageName);
-        if (!stat) {
+        if (!stat || limit.packageName === 'com.android.settings') {
           continue;
         }
 
@@ -129,9 +129,9 @@ class BackgroundMonitor {
           }
         }
       }
-    } catch (e) {
+    } catch (error) {
       // eslint-disable-next-line no-console
-      console.error('Background check error:', e);
+      console.error('Background check error:', error);
     }
   }
 
